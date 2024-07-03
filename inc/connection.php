@@ -5,13 +5,13 @@
 $host = "localhost";
 $user_name = "root";
 $user_password ="";
-$db_name = "scandiweb";
+$db_name ="scandiweb";
 
 //Error Handling
 
 try 
 {
-    $dsn = "mysql:host = $host ; dbname = $db_name";
+    $dsn = "mysql:host=$host;dbname=$db_name";
     $connection = new PDO($dsn , $user_name, $user_password);
     return $connection ; 
 
